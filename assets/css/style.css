@@ -1,0 +1,9 @@
+body{
+background-image:url(../images/background-15.jpg);
+z-index: 0;
+}
+
+.jumbotron q {
+
+	 align-items: center;
+}

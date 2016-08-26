@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/bootswatch.less" type="text/css" rel="stylesheet">
+    <link href="assets/css/variables.less" type="text/css" rel="stylesheet">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <!--radio buttons, need class so that it doesnt prevent all buttons on page from being affected-->
+    <div class="container start">
+        <div class="jumbotron vertical center">
+            <h1>Trivia Game!</h1>
+            <p>Press start to begin </p> 
+            <a href="#" class="btn btn-primary btn-lg" id="tomain">Start!</a> <!--need to hide others-->
+        </div>
+        <div class="container" id="quiz">
+            <div class="jumbotron q">
+                <h1>Trivia Game!</h1>
+                <h2>Get goin'!</h2>
+            </div>
+            <div class="container">
+                <!--....maybe not bootstrap here except for buttons.  //different layout no longer relevant
+?? How do I make this appear as a new page???-->
+                <!--<div class = "panel panel-default">	
+				<div class="panel-heading">
+						<h3 class="panel-title">Trivia Questions:</h3>
+				</div>
+				<div class="panel-body">
+				<h3> Who was the iconic the drummer for the Beatles?</h3>
+				<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>	
+				</ul>
+				</div>
+			</div> -->
+
+
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class=Q uestionNum="panel-title">Who was the iconic drummer of the beatles?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio1">Ringo Starr</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio1">Keith Moon</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio1">Eric Clapton</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio1">Neil Young</label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Which artist is famous for the song "Like A Prayer?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <fieldset id - "q3">
+                                            <input type="radio" name="optradio2">Madonna</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio2">Rihanna</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio2">Beyonce</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio2">Neil Young</label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Which basketball team did Mcihael Jordan Play for? </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <fieldset id=q 3>
+                                            <input type="radio" name="optradio3">Celtics</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio3">Da Bulls</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio3">Knicks</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio3">Spurs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Which country hosted the 2016 Olympics? </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio4">Brazil</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio4">USA</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio4">China</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio4">Japan</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q" class = "q1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> At which age did Jimi Hendrix pass away? </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio5">21</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio5">25</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio5">31</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio5">27</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">In which State is Duke University? </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio6">Oregon</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio6">Sotuh Carolina</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio6">North Carlona</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio6">Georgia</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Which city is the capital of the Czech Republic? </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio7">Hamburg</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio7">Prague</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio7">Bucharest</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio7">Berlin</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Who is the writer of the sit-com "30 Rock?" </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio8">Tina Fey</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio8">Fred Armisen</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio8">Tracy Morgan</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio8">Tracy Jordan</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="jumbotron end">
+                        <h1>Game Over!</h1>
+                        <p>Correct Answers: 0</p>
+                        <p>Incorrect Answers: 0</p>
+                        <p>Unanswered: 0</p>
+                    </div>
+                </div>
+                <!--<script type ="text/javascript">
+function countDown(){
+
+	var element = document.getElementById(elem);
+	element.innerHTML =  "You have "+secs+" seconds to finish";
+		if (secs<1) {
+				clearTimeout(timer);
+				element.innerHTML += '<a href = "file:///C:/Users/test/Desktop/Bootcamp/homework/TriviaGame/triviaEnd.html">' 
+
+		}
+	secs
+
+var timer = setTimeOut('countDown('+secs+', "'+elem+'")',1000);
+}
+</script>
+<script type ="text/javascript">countDown(5, "quiz"); </script>
+-->
+                <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+                <script>
+                $(document).ready(function() {
+                    var token;
+                    var count = 120;
+                    var counter = setInterval(minusSec, 1000);
+
+                    function minusSec() {
+                        count--;
+                        $("#num").html(count);
+                   
+                     if (count === 0) {
+
+                            clearInterval(counter);
+                        }
+                     }
+
+
+
+                    //function timer(){
+
+                    $("#timer").on("click", function() {
+
+                       
+                        //document.getElementById("num").innerHTML = count;
+                        
+
+                    });
+                });
+                </script>
+                <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+
+</html>
