@@ -19,7 +19,7 @@
         <div class="jumbotron">
             <h1>Trivia Game!</h1>
             <p>Press start to begin </p> 
-            <a href="#" class="btn btn-primary btn-lg" id = timerbutton id="tomain">Start!</a> <!--need to hide others--> <!--need to hide others-->
+            <a href="#" class="btn btn-primary btn-lg timerbutton" class = "" id="tomain">Start!</a> <!--need to hide others--> <!--need to hide others-->
         </div>
         <div class="container" id="quiz">
             <div class="jumbotron q">
@@ -297,10 +297,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="row q">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-12 text-center">
+                <a href="#" class="btn btn-primary btn-lg" id = done>Done!</a>
+
+                        </div>
+                </div>
+                </div>
+                </div>
                 <div class="container">
                     <div class="jumbotron end">
                         <h1>Game Over!</h1>
-                        <a href="#" class="btn btn-primary btn-lg" id = done>Done!</a>
+                        
                         <p>Correct Answers:<span class = "trues"></span></p>
                         <p>Incorrect Answers: <span class = "falses"></span></p>
                         <p>Unanswered: <span class = "Unanswered"></span></p>
