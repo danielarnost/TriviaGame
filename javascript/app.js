@@ -3,23 +3,41 @@ $(document).ready(function(){
 //$('.q, .end').hide(q);
 
 
+
+
 //$('#timebutton') .on('click', function(event){
-//$('.q, .end').show(q);	
+//$('.q, .end').hide(q);
+//var$
+	
 
 
 
 
-//})
+
+
 
 $QuestionNum = 1;
 $radionum = 1;
 
 //var count = 120;
 //var counter= setInterval(timer,1000);
-var correctAnswers
-var incorrectAnswers
-var unanswered
+var correctAnswers; 
+var incorrectAnswers;
+var unAnswered;
 
+$("#done").on("click", function() {// use += when adding an onclick to total score
+	  correctAnswers = $(':radio[class=true]:checked').length  //adds opal to total score i.e. total score = total score + opal
+	   incorrectAnswers = $(':radio[class=false]:checked').length
+	   unAnswered = 8 - correctAnswers - incorrectAnswers;
+$(".trues").html(correctAnswers);
+$(".falses").html(incorrectAnswers);
+$(".Unanswered").html(unAnswered);
+// need to interact with DOM
+	//checkScore();
+ })
+
+
+           
 //$('#timer') .on('click', function(event){
 
 //function timer(){
@@ -56,10 +74,12 @@ var unanswered
                             clearInterval(counter);
                         };
                      };
-                 });
+                 
+
 
 
 });
-//$('.q, .end').hide(q);
+});
+
 
  //$ is a function to select multiple classes, use syntact in Parens .hide is a function
