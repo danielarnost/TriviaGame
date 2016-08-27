@@ -14,8 +14,8 @@ $(".timerbutton").on("click", function() {
  					var token;
                    counter = setInterval(minusSec, 1000); 
                    $('.q').show(); 
-
-                    
+                   $('#startpage').hide()
+                   $('.end').hide();
 
 });
 function minusSec() {
@@ -42,6 +42,8 @@ var incorrectAnswers;
 var unAnswered;
 
 $("#done").on("click", function() {
+
+$('#startpage').hide();
 $('.end').show();
 	  correctAnswers = $(':radio[class=true]:checked').length 
 	   incorrectAnswers = $(':radio[class=false]:checked').length
