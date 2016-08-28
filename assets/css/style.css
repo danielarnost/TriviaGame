@@ -3,7 +3,34 @@ background-image:url(../images/background-15.jpg);
 z-index: 0;
 }
 
-.jumbotron q {
+#startpage{
+border:2px solid black;
+margin-top: 100px;
+	 text-align: center;
+}
 
-	 align-items: center;
+#timetron{
+border:2px solid black;
+margin-top: 100px;
+	 text-align: center;
+}
+#donepanel
+{
+
+border:2px solid black;
+
+}
+
+#quest{
+
+border:2px solid black;
+	
+}
+
+
+
+.end{
+border:2px solid black;
+margin-top: 100px;
+	 text-align: center;
 }
