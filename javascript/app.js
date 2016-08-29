@@ -1,4 +1,4 @@
-alert("hello");
+
 $(document).ready(function() {
             $('.q').hide();
             $('.end').hide();
