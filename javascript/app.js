@@ -40,7 +40,7 @@ $(document).ready(function() {
             };
 
             $QuestionNum = 1;
-            $radionum = 1;
+            // $radionum = 1;
 
             //var count = 120;
             //var counter= setInterval(timer,1000);
